@@ -39,4 +39,6 @@ NtlDocumentCamera.openCamera();
 		subscription.remove();
 	}
 ```
-  
+## Image
+![Optional Text](/images/IMG_0112.PNG)
+![Optional Text](/images/IMG_0113.PNG)
