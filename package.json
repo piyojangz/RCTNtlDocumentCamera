@@ -1,6 +1,6 @@
 {
   "name": "react-native-ntl-document-camera",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "using VisionKit feature (VNDocumentCameraViewController)",
   "main": "index.js",
   "scripts": {
