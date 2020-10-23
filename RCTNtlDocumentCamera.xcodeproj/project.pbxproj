@@ -28,6 +28,7 @@
 		1895349B25418D7100BEB781 /* libRCTNtlDocumentCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTNtlDocumentCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1895349E25418D7100BEB781 /* RCTNtlDocumentCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNtlDocumentCamera.h; sourceTree = "<group>"; };
 		1895349F25418D7100BEB781 /* RCTNtlDocumentCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTNtlDocumentCamera.m; sourceTree = "<group>"; };
+		189534C02541939C00BEB781 /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/VisionKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			children = (
 				1895349D25418D7100BEB781 /* RCTNtlDocumentCamera */,
 				1895349C25418D7100BEB781 /* Products */,
+				189534BF2541939C00BEB781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +66,14 @@
 				1895349F25418D7100BEB781 /* RCTNtlDocumentCamera.m */,
 			);
 			path = RCTNtlDocumentCamera;
+			sourceTree = "<group>";
+		};
+		189534BF2541939C00BEB781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189534C02541939C00BEB781 /* VisionKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					1895349A25418D7100BEB781 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
@@ -181,6 +192,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,6 +246,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -244,8 +257,15 @@
 		189534A525418D7100BEB781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = QRAA467396;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -256,8 +276,15 @@
 		189534A625418D7100BEB781 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = QRAA467396;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

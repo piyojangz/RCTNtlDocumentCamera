@@ -1,0 +1,18 @@
+{
+  "name": "react-native-ntl-document-camera",
+  "version": "1.0.0",
+  "description": "using VisionKit feature (VNDocumentCameraViewController)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:piyojangz/RCTNtlDocumentCamera.git"
+  },
+  "author": "MIT",
+  "license": "ISC"
+}
