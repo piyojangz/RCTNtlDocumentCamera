@@ -1,5 +1,5 @@
 
-# react-native-react-native-ntl-documentscanner
+# react-native-ntl-documentscanner
 
 ## Getting started
 
